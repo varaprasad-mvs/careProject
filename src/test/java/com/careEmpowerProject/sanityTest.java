@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class sanityTest {
@@ -29,16 +30,19 @@ public class sanityTest {
 	  
 	  ra.clickSelectAll();
 	  
+	  Assert.assertTrue(ra.checkEnabled());
+	  
 	  ra.clickDeselectAll();
+	  Assert.assertFalse(ra.checkEnabled());
   }
   @BeforeMethod
   public void beforeMethod() {
 	  
 	  this.pd=new pageDriver();
 	 this.driver=pd.setDriver();
-	 pd.openUrl("");
+	 pd.openUrl("http://qa-careempower.healthbi.com/ce-frontend-app/login");
 	 this.lp= new loginPage(this.driver);
-	 lp.login("", "");
+	 lp.login("QAuser1", "password0");
 	 this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	 
 	 this.hp=new homepage(this.driver);

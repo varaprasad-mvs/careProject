@@ -14,7 +14,7 @@ public class homepage {
 	public homepage(WebDriver driver) {
 		this.driver=driver;
 		
-		this.Requiring_Action=this.driver.findElement(By.id(""));//change the property as vaadin
+		this.Requiring_Action=this.driver.findElement(By.className("Requiring Action"));//change the property if required
 	}
 	
 	public void Click_requiringAction() {

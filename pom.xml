@@ -42,6 +42,81 @@
     <artifactId>xmlunit</artifactId>
     <version>1.4</version>
 </dependency>
+
+<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-shared</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-server</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-push</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-client</artifactId>
+		<version>8.3.3</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-client-compiler</artifactId>
+		<version>8.3.3</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-client-compiled</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-themes</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-compatibility-shared</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-compatibility-server</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-compatibility-themes</artifactId>
+		<version>8.3.3</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-compatibility-client</artifactId>
+		<version>8.3.3</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.vaadin</groupId>
+		<artifactId>vaadin-compatibility-client-compiled</artifactId>
+		<version>8.3.3</version>
+	</dependency>
   </dependencies>
 
   <build>

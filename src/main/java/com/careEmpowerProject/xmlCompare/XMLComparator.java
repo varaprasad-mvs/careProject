@@ -22,9 +22,9 @@ public class XMLComparator {
 		// reading two xml file to compare in Java program 
 		
 		
-		FileInputStream fis1 = new FileInputStream("C:\\Users\\ADMIN\\eclipse-workspace1\\careEmpowerProject\\data1.xml"); 
+		FileInputStream fis1 = new FileInputStream("C:\\Users\\ADMIN\\eclipse-workspace2\\careEmpowerProject\\data1.xml"); 
 		
-		FileInputStream fis2 = new FileInputStream("C:\\Users\\ADMIN\\eclipse-workspace1\\careEmpowerProject\\data2.xml");
+		FileInputStream fis2 = new FileInputStream("C:\\Users\\ADMIN\\eclipse-workspace2\\careEmpowerProject\\data2.xml");
 		
 		// using BufferedReader for improved performance 
 		
