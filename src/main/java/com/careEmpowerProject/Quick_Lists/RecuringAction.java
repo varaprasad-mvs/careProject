@@ -19,11 +19,11 @@ public class RecuringAction {
 		
 		this.driver= driver;
 		
-		this.selectAll=this.driver.findElement(By.className("Select All"));//change the property if its not working
+		this.selectAll=this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[3]"));//change the property if its not working
 		
-		this.deselectAll= this.driver.findElement(By.className("Deselect All"));//change the property if its not working
+		this.deselectAll= this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[4]"));//change the property if its not working
 		
-		this.patient1_checkbox= this.driver.findElement(By.id(""));//add the property
+		this.patient1_checkbox= this.driver.findElement(By.id("gwt-uid-3"));
 	}
 	
 	public void clickSelectAll() {
@@ -35,9 +35,14 @@ public class RecuringAction {
 		this.deselectAll.click();
 	}
 	
+	public boolean checkPresent() {
+		boolean t=this.selectAll.isDisplayed();
+		return t;
+	}
+	
 	public boolean checkEnabled() {
-		
-		boolean t= this.patient1_checkbox.isEnabled();
+		this.patient1_checkbox.click();
+		boolean t= this.patient1_checkbox.isSelected();
 		return t;
 		
 		

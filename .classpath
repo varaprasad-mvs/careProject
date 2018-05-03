@@ -22,5 +22,13 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/cucumber-core-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/cucumber-java-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/cucumber-jvm-deps-1.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/maven-cucumber-reporting-3.15.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ADMIN/Desktop/Softwares/cucumber/mockito-all-2.0.2-beta.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

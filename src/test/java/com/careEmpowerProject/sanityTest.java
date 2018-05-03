@@ -25,34 +25,39 @@ public class sanityTest {
 	private RecuringAction ra;
   @Test
   public void sanity() {
-	  
-	  this.ra= new RecuringAction(this.driver);
-	  
-	  ra.clickSelectAll();
-	  
-	  Assert.assertTrue(ra.checkEnabled());
-	  
-	  ra.clickDeselectAll();
-	  Assert.assertFalse(ra.checkEnabled());
+	
+	this.ra= new RecuringAction(this.driver);
+	
+	ra.clickSelectAll();
+	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
+	  //Assert.assertTrue(ra.checkEnabled());
+	Assert.assertFalse(ra.checkEnabled());
+	
+	ra.clickDeselectAll();
+	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	Assert.assertFalse(ra.checkEnabled());
   }
   @BeforeMethod
   public void beforeMethod() {
-	  
-	  this.pd=new pageDriver();
-	 this.driver=pd.setDriver();
-	 pd.openUrl("http://qa-careempower.healthbi.com/ce-frontend-app/login");
-	 this.lp= new loginPage(this.driver);
-	 lp.login("QAuser1", "password0");
-	 this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	 
-	 this.hp=new homepage(this.driver);
-	 hp.Click_requiringAction();
-	 this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  
+	
+	this.pd=new pageDriver();
+	this.driver=pd.setDriver();
+	pd.openUrl("http://qa-careempower.healthbi.com/ce-frontend-app/login");
+	this.lp= new loginPage(this.driver);
+	lp.login("QAuser1", "password0");
+	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
+	this.hp=new homepage(this.driver);
+	hp.Click_requiringAction();
+	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
   }
 
   @AfterMethod
   public void afterMethod() {
+	driver.close();
+	
   }
 
 }

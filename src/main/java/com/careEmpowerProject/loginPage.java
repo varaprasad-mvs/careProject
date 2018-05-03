@@ -21,13 +21,13 @@ public class loginPage {
 		
 		this.driver=driver;
 		
-		this.Username=this.driver.findElement(By.id(""));//change the property as vaadin
+		this.Username=this.driver.findElement(By.id("username"));//change the property as vaadin
 		
-		this.Password=this.driver.findElement(By.id(""));//change the property as vaadin
+		this.Password=this.driver.findElement(By.id("password"));//change the property as vaadin
 		
-		this.LOGIN_button=this.driver.findElement(By.id(""));//change the property as vaadin
+		this.LOGIN_button=this.driver.findElement(By.className("button"));//change the property as vaadin
 		
-		this.Forgot_Password=this.driver.findElement(By.id(""));//change the property as vaadin
+		//this.Forgot_Password=this.driver.findElement(By.id(""));//change the property as vaadin
 	}
 	
 	public void login(String uName,String password) {
