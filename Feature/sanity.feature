@@ -1,10 +1,12 @@
 Feature: Login Action
 
+@Test1
 Scenario: Able to login and log out of the application
 	Given user in login page 
 	When user enter correct login details
 	Then Successful login
 
+@Test2
 Scenario: Able to navigate through all the quick list pages on ‘Patient Roster’ from main menu.
 	Given logged with correct credentials
 	
@@ -34,7 +36,9 @@ Scenario: Able to navigate through all the quick list pages on ‘Patient Roster
 	
 	When Click on All Patients link
 	Then All Patients  Page is Opened.
-
+	
+	
+@Test3
 Scenario: Able to navigate to all the pages from the Main menu drop down
 When User LogOut from the Application
 	Then Message displayed LogOut Successfully

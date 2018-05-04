@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class sanityTest {
+public class smokeTest {
 	
 	private WebDriver driver;
 	private pageDriver pd;
@@ -24,7 +24,7 @@ public class sanityTest {
 	
 	private RecuringAction ra;
   @Test
-  public void sanity() {
+  public void smoke() {
 	
 	this.ra= new RecuringAction(this.driver);
 	
