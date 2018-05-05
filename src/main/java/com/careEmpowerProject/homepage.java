@@ -18,6 +18,14 @@ public class homepage {
 	private WebElement RAFs;
 	private WebElement medicationAdherence;
 	
+	private WebElement patientRoster;
+	private WebElement careTeam;
+	private WebElement providerPerformance;
+	private WebElement myPerformance;
+	private WebElement administration;
+	
+
+	
 	
 	public homepage(WebDriver driver) {
 		this.driver=driver;
@@ -74,6 +82,13 @@ public class homepage {
 	public boolean checkpresent() {
 		boolean t=this.allPatients.isDisplayed();
 		return t;
+	}
+	
+	public String getTittle() {
+		String t=this.driver.getCurrentUrl();
+		
+		return t;
+		
 	}
 
 }

@@ -31,6 +31,10 @@ public class smokeTest {
 	ra.clickSelectAll();
 	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	
+	//System.out.println("Title ="+hp.getTittle());
+	
+	//System.out.println("Text ="+ra.getText());
+	
 	  //Assert.assertTrue(ra.checkEnabled());
 	Assert.assertFalse(ra.checkEnabled());
 	
@@ -43,7 +47,7 @@ public class smokeTest {
 	
 	this.pd=new pageDriver();
 	this.driver=pd.setDriver();
-	pd.openUrl("http://qa-careempower.healthbi.com/ce-frontend-app/login");
+	pd.openUrl("");
 	this.lp= new loginPage(this.driver);
 	lp.login("QAuser1", "password0");
 	this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
