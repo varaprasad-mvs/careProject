@@ -22,7 +22,7 @@ Scenario: Able to navigate through all the quick list pages on ‘Patient Roster
 	When Click on RAFs  link
 	Then RAFs Page is Opened.
 	
-	When Click on Care GapsNew ED Visits link
+	When Click on Care Gaps link
 	Then Care Gaps Page is Opened.
 	
 	When Click on Medication Adherence Visits link
@@ -40,8 +40,23 @@ Scenario: Able to navigate through all the quick list pages on ‘Patient Roster
 	
 @Test3
 Scenario: Able to navigate to all the pages from the Main menu drop down
-When User LogOut from the Application
-	Then Message displayed LogOut Successfully
+
+    Given logged with correct credentials
+
+    When Click on Patient Roster link
+	Then Patient Roster Page is Opened.
+	
+	When Click on Care Team link
+	Then Care Team Page is Opened.
+	
+	When Click on Provider Performance link
+	Then Provider Performance Page is Opened.
+	
+	When Click on My Performance  link
+	Then My Performance Page is Opened.
+	
+	When Click on Administration link
+	Then Administration Page is Opened.
 	
 Scenario: Making sure, Under Quick Lists ‘RAFs’ is included and  checking the new functionality added as far as possible like :
 When User LogOut from the Application

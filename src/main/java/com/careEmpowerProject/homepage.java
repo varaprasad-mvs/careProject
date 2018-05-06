@@ -17,7 +17,7 @@ public class homepage {
 	private WebElement newEdVisits;
 	private WebElement RAFs;
 	private WebElement medicationAdherence;
-	
+	private WebElement mainMenu;
 	private WebElement patientRoster;
 	private WebElement careTeam;
 	private WebElement providerPerformance;
@@ -39,6 +39,12 @@ public class homepage {
 	this.newEdVisits= this.driver.findElement(By.xpath(""));
 	this.RAFs=this.driver.findElement(By.xpath(""));
 	this.medicationAdherence=this.driver.findElement(By.xpath(""));
+	this.patientRoster=this.driver.findElement(By.xpath(""));
+	this.careTeam=this.driver.findElement(By.xpath(""));
+	this.providerPerformance=this.driver.findElement(By.xpath(""));
+	this.myPerformance=this.driver.findElement(By.xpath(""));
+	this.administration=this.driver.findElement(By.xpath(""));
+	this.mainMenu=this.driver.findElement(By.xpath(""));
 	
 	}
 	
@@ -78,6 +84,32 @@ public class homepage {
 	public void medicationAdherence() {
 		this.medicationAdherence.click();
 	}
+	
+	public void mainMenu() {
+		this.mainMenu.click();
+	}
+	
+	
+	public void PatientRoster() {
+		this.patientRoster.click();
+	}
+	
+	public void CareTeam() {
+		this.careTeam.click();
+	}
+	
+	public void ProviderPerformance() {
+		this.providerPerformance.click();
+	}
+	
+	public void MyPerformance() {
+		this.myPerformance.click();
+	}
+	
+	public void Administration() {
+		this.administration.click();
+	}
+	
 	
 	public boolean checkpresent() {
 		boolean t=this.allPatients.isDisplayed();

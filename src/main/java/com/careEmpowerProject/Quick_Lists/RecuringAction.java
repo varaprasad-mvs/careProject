@@ -32,7 +32,7 @@ public class RecuringAction {
 		this.patient1_checkbox= this.driver.findElement(By.id("gwt-uid-3"));
 		this.title= this.driver.findElement(By.id(""));
 		
-		this.menu_Text= this.driver.findElement(By.id(""));
+		//this.menu_Text= this.driver.findElement(By.id(""));
 	}
 	
 	public void clickSelectAll() {

@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "C:\\Users\\ADMIN\\eclipse-workspace2\\careEmpowerProject\\Feature"
-		,glue={"stepDefenition"},tags={"@Test1"}
+		,glue={"stepDefenition"},tags={"@Test3"}
 		)
  
-public class TestRunner {
+public class CucumberTestRunner {
  
 }

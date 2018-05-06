@@ -6,13 +6,13 @@ import org.openqa.selenium.WebElement;
 
 import com.careEmpowerProject.utils.pageDriver;
 
-public class careTeam {
+public class patientRoste {
 	
 	private WebDriver driver;
 	
 	private WebElement title;
 	
-	public careTeam(WebDriver driver) {
+	public patientRoste(WebDriver driver) {
 		
 		this.driver=driver;
 		
