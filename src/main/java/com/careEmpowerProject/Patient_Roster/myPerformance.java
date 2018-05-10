@@ -10,19 +10,22 @@ public class myPerformance {
 	
 	private WebDriver driver;
 	
-	private WebElement title;
+	private WebElement validateText;
 	
 	public myPerformance(WebDriver driver) {
 		
 		this.driver=driver;
 		
-		this.title=this.driver.findElement(By.id(""));
+		this.validateText=this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div[1]/div/div[3]/div/div[1]/div"));
 	}
 	
-public String getElementText() {
+	public boolean isDisplayed() {
+		//this.patient1_checkbox.click();
+		boolean t= this.validateText.isDisplayed();
+		return t;
 		
-		pageDriver p=new pageDriver();
-		return p.getText(this.title);
+		
 	}
+
 
 }

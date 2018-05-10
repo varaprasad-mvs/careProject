@@ -30,7 +30,7 @@ public class RecuringAction {
 		this.deselectAll= this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[4]"));//change the property if its not working
 		
 		this.patient1_checkbox= this.driver.findElement(By.id("gwt-uid-3"));
-		this.title= this.driver.findElement(By.id(""));
+		//this.title= this.driver.findElement(By.id(""));
 		
 		//this.menu_Text= this.driver.findElement(By.id(""));
 	}
@@ -49,6 +49,14 @@ public class RecuringAction {
 	public boolean checkEnabled() {
 		this.patient1_checkbox.click();
 		boolean t= this.patient1_checkbox.isSelected();
+		return t;
+		
+		
+	}
+	
+	public boolean isDisplayed() {
+		//this.patient1_checkbox.click();
+		boolean t= this.selectAll.isDisplayed();
 		return t;
 		
 		

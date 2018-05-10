@@ -1,18 +1,15 @@
 package com.careEmpowerProject.Patient_Roster;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.careEmpowerProject.utils.pageDriver;
-
-public class patientRoste {
-	
-	private WebDriver driver;
+public class dashboard {
+private WebDriver driver;
 	
 	private WebElement title;
 	
-	public patientRoste(WebDriver driver) {
+	public dashboard(WebDriver driver) {
 		
 		this.driver=driver;
 		
@@ -25,5 +22,8 @@ public String getElementText() {
 		return p.getText(this.title);
 	}
 
-
 }
+
+
+
+

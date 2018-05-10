@@ -16,7 +16,7 @@ private WebDriver driver;
 	
 	private WebElement patient1_checkbox;
 	
-	private WebElement title;
+	private WebElement title1;
 	
 	
 	public newHospitalization(WebDriver driver) {
@@ -25,11 +25,11 @@ private WebDriver driver;
 		
 		this.selectAll=this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[3]"));//change the property if its not working
 		
-		this.deselectAll= this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[4]"));//change the property if its not working
+		//this.deselectAll= this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[4]/div/div/div[1]/div/div[4]"));//change the property if its not working
 		
-		this.patient1_checkbox= this.driver.findElement(By.id("gwt-uid-3"));
+		//this.patient1_checkbox= this.driver.findElement(By.id("gwt-uid-3"));
 		
-		this.title= this.driver.findElement(By.id(""));
+		//this.title1= this.driver.findElement(By.id(""));
 	}
 	
 	public void clickSelectAll() {
@@ -51,10 +51,20 @@ private WebDriver driver;
 		
 	}
 	
-public String getElementText() {
+	public boolean isDisplayed() {
+		//this.patient1_checkbox.click();
+		boolean t= this.selectAll.isDisplayed();
+		return t;
+		
+		
+	}
+	
+public String getElementText1() {
 		
 		pageDriver p=new pageDriver();
-		return p.getText(this.title);
+		return p.getText(this.title1);
+	
+	//return this.title1.getText();
 	}
 
 }

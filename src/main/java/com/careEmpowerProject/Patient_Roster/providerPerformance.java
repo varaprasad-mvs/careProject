@@ -10,19 +10,21 @@ public class providerPerformance {
 	
 	private WebDriver driver;
 	
-	private WebElement title;
+	private WebElement applyFilter;
 	
 	public providerPerformance(WebDriver driver) {
 		
 		this.driver=driver;
 		
-		this.title=this.driver.findElement(By.id(""));
+		this.applyFilter=this.driver.findElement(By.xpath("html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[4]/div[2]"));
 	}
 	
-public String getElementText() {
+	public boolean isDisplayed() {
+		//this.patient1_checkbox.click();
+		boolean t= this.applyFilter.isDisplayed();
+		return t;
 		
-		pageDriver p=new pageDriver();
-		return p.getText(this.title);
+		
 	}
 
 }
